@@ -54,4 +54,8 @@ hip surgeons, including:
 
 The dataset was adapted from https://www.resurfacingscan.be/ortopedlistan/drutoml.htm and contains 1032 records. Information from https://www.hipresurfacingsite.com/list-of-doctors.php was also used.  Some inconsistencies and mistakes in the datasets were resolved by hand.
 
-You can find the data in ['./Find-a-Doctor/data/hip_surgeons.csv'](data/hip_surgeons.csv).
+You can find the data in [`Find-a-Doctor/data/hip_surgeons.csv`](Find-a-Doctor/data/hip_surgeons.csv).
+
+
+
+
