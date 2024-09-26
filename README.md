@@ -24,7 +24,7 @@ hip surgeons, including:
 - **number_thr:** number of total hip replacements by surgeon
 - **number_bmhr:** number of Birmingham Mid-Head Resections
 - **type_of_hr_prosthesis:** type of hip resurfacing prosthesis
-- **type_of_thr_prosthesis:** type_of total hip replacement prosthesis
+- **type_of_thr_prosthesis:** type of total hip replacement prosthesis
 - **operational_technique:** operational technique
 - **anesthetic:** anesthetic
 - **cement_femur_side:** is prosthesis cemented
