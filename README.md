@@ -137,7 +137,7 @@ https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-d
 docker pull postgres
 docker run -d --name container_name -p 5432:5432 -e POSTGRES_USER=your_username POSTGRES_PASSWORD=your_password postgres
 docker ps #check the container was created and is running
-docker exec -it container_name bash  #to get a container root command line
+docker exec -it container_name bash #to get a container root command line
 
 psql -h localhost -U your_username #to connect to postgresql
 ```
@@ -486,7 +486,12 @@ We also tested `gpt-4o`, but were unable to complete the evaluation without runn
 We were unable to connect to Groq, and we exceeded the number of allowed requests for Hugging Face models.
 Money was an object so we went with `gpt-4o-mini`.
 
+Using a second prompt with the LLM as a patient gave the following:
 
+- 163 (81%) `RELEVANT`
+- 29 (14%) `PARTLY_RELEVANT`
+- 8 (4%) `NON_RELEVANT`
+The first prompt does a better job here.
 
 ## Monitoring
 
