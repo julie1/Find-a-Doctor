@@ -131,7 +131,7 @@ cd Find-a-Doctor
 export POSTGRES_HOST=localhost
 python db_prep.py
 ```
-If the above produces errors, instead try the following https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-docker/#:~:text=To%20create%20a%20PostgreSQL%20database%20in%20Docker%2C%20first%2C%20pull%2F,postgres%E2%80%9D%20command.:
+If the above produces errors, instead try the following: https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-docker/#:~:text=To%20create%20a%20PostgreSQL%20database%20in%20Docker%2C%20first%2C%20pull%2F,postgres%E2%80%9D%20command
 ```bash
 docker pull postgres
 docker run -d --name container_name -p 5432:5432 -e POSTGRES_USER=your_username POSTGRES_PASSWORD=your_password postgres
