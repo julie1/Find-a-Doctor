@@ -491,6 +491,7 @@ Using a second prompt with the LLM as a patient gave the following:
 - 163 (81%) `RELEVANT`
 - 29 (14%) `PARTLY_RELEVANT`
 - 8 (4%) `NON_RELEVANT`
+
 The first prompt does a better job here.
 
 ## Monitoring
