@@ -412,6 +412,8 @@ We have the following notebooks:
 
 - [`rag-test.ipynb`](notebooks/rag-test.ipynb): The RAG flow and evaluating the system.
 - [`evaluation-data-generation.ipynb`](notebooks/evaluation-data-generation.ipynb): Generating the ground truth dataset for retrieval evaluation.
+- [`correct_convert_html_to_csv`](notebooks/correct_convert_html_to_csv.ipynb): Used to convert raw data to a csv file.
+- [`data_prepare`](notebooks/data_prepare.ipynb): Used to add another column and clean up data.
 
 ### Retrieval evaluation
 
