@@ -13,6 +13,8 @@ requests = "*"
 psycopg2-binary = "*"
 python-dotenv = "*"
 gunicorn = "*"
+transformers = "*"
+torch = "*"
 
 [dev-packages]
 export = "*"
