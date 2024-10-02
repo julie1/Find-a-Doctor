@@ -131,12 +131,13 @@ cd Find-a-Doctor
 export POSTGRES_HOST=localhost
 python db_prep.py
 ```
-If the above produces errors, instead try the following: https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-docker/#:~:text=To%20create%20a%20PostgreSQL%20database%20in%20Docker%2C%20first%2C%20pull%2F,postgres%E2%80%9D%20command
+If the above produces errors, instead try the following: 
+https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-docker/#:~:text=To%20create%20a%20PostgreSQL%20database%20in%20Docker%2C%20first%2C%20pull%2F,postgres%E2%80%9D%20command
 ```bash
 docker pull postgres
 docker run -d --name container_name -p 5432:5432 -e POSTGRES_USER=your_username POSTGRES_PASSWORD=your_password postgres
 docker ps #check the container was created and is running
-docker exec -it container_name bash #to get a container root command line
+docker exec -it container_name bash  #to get a container root command line
 
 psql -h localhost -U your_username #to connect to postgresql
 ```
@@ -412,8 +413,8 @@ We have the following notebooks:
 
 - [`rag-test.ipynb`](notebooks/rag-test.ipynb): The RAG flow and evaluating the system.
 - [`evaluation-data-generation.ipynb`](notebooks/evaluation-data-generation.ipynb): Generating the ground truth dataset for retrieval evaluation.
-- [`correct_convert_html_to_csv`](notebooks/correct_convert_html_to_csv.ipynb): Used to convert raw data to a csv file.
-- [`data_prepare`](notebooks/data_prepare.ipynb): Used to add another column and clean up data.
+- [`correct_convert_html_to_csv.ipynb`](notebooks/correct_convert_html_to_csv.ipynb): Used to convert raw data to a csv file.
+- [`data_prepare.ipynb`](notebooks/data_prepare.ipynb): Used to add another column and clean up data.
 
 ### Retrieval evaluation
 
