@@ -412,6 +412,7 @@ pipenv run jupyter notebook
 We have the following notebooks:
 
 - [`rag-test.ipynb`](notebooks/rag-test.ipynb): The RAG flow and evaluating the system.
+- [`rag-test-Copy1.ipynb`](notebooks/rag-test-Copy1.ipynb): The RAG flow and evaluating the system.
 - [`evaluation-data-generation.ipynb`](notebooks/evaluation-data-generation.ipynb): Generating the ground truth dataset for retrieval evaluation.
 - [`correct_convert_html_to_csv.ipynb`](notebooks/correct_convert_html_to_csv.ipynb): Used to convert raw data to a csv file.
 - [`data_prepare.ipynb`](notebooks/data_prepare.ipynb): Used to add another column and clean up data.
