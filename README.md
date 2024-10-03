@@ -7,8 +7,7 @@ a free course about LLMs and RAG.
 We will specialize in the current project to hip surgeons and in particular
 those who do hip resurfacing. Hip resurfacing (HR), an alternative to total hip replacement (THR), has many 
 advantages, especially for physically acive people with hip dysfunction.  Finding a doctor can be tricky
-so having available information in an accessible format could be helpful.  Most of the code for this project was adapted
-from Alexey Grigorev's Fitness Assistant project: https://github.com/alexeygrigorev/fitness-assistant
+so having available information in an accessible format could be helpful.  Most of the code for this project as well as the format of this README was adapted from Alexey Grigorev's Fitness Assistant project: https://github.com/alexeygrigorev/fitness-assistant
 
 ## Project overview
 
@@ -71,9 +70,15 @@ You can find the data in [`Find-a-Doctor/data/hip_surgeons.csv`](Find-a-Doctor/d
 - Flask as the API interface (see [Background](#background) for more information on Flask)
 - Grafana for monitoring and PostgreSQL as the backend for it
 - OpenAI as an LLM
+- conda
 
 ## Preparation
 
+I started by creating a conda environment:
+```bash
+conda create -n find-a-doctor python=3.12
+conda activate find-a-doctor
+```
 Since we use OpenAI, you need to provide the API key:
 
 1. Install `direnv`. If you use Ubuntu, run `sudo apt install direnv` and then `direnv hook bash >> ~/.bashrc`.
@@ -506,9 +511,6 @@ It's accessible at [localhost:3000](http://localhost:3000):
 
 ### Dashboards
 
-<p align="center">
-  <img src="images/dash.png">
-</p>
 
 The monitoring dashboard contains several panels:
 
@@ -525,7 +527,7 @@ The monitoring dashboard contains several panels:
 All Grafana configurations are in the [`grafana`](grafana/) folder:
 
 - [`init.py`](grafana/init.py) - for initializing the datasource and the dashboard.
-- [`dashboard.json`](grafana/dashboard.json - the actual dashboard (taken from LLM Zoomcamp without changes).
+- [`dashboard.json`](grafana/dashboard.json) - the actual dashboard (taken from LLM Zoomcamp without changes).
 
 To initialize the dashboard, first ensure Grafana is
 running (it starts automatically when you do `docker-compose up`).
