@@ -116,6 +116,12 @@ docker compose down -v
 ```
 removes volumes declared in the docker-compose file.
 
+If the application fails to start with the following error: Error starting userland proxy: listen tcp4 0.0.0.0:5432: bind: address already in use
+```bash
+sudo lsof -i :5432
+sudo kill -9 $(PID) 
+```
+will clear the postgres port.
 
 ### Database configuration
 
