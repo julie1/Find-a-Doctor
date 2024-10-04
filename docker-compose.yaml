@@ -10,6 +10,8 @@ services:
       - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - find-a-doctor_default
 
   app:
     build:
@@ -22,6 +24,8 @@ services:
       - "${APP_PORT:-5000}:5000"
     depends_on:
       - postgres
+    networks:
+      - find-a-doctor_default
        
   grafana:
     image: grafana/grafana:latest
@@ -42,6 +46,12 @@ services:
       - GF_SECURITY_SECRET_KEY=${GRAFANA_SECRET_KEY:-your_secret_key_here}
     depends_on:
       - postgres
+    networks:
+      - find-a-doctor_default
+
+networks:
+  find-a-doctor_default:
+    driver: bridge
 
 volumes:
   postgres_data:
