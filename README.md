@@ -249,7 +249,7 @@ docker run -it --rm \
 When inserting logs into the database, ensure the timestamps are
 correct. Otherwise, they won't be displayed accurately in Grafana.
 
-When you start the application, you will see the following in
+When you start the application, you will see something like the following in
 your logs:
 
 ```
