@@ -557,6 +557,18 @@ Then go to [localhost:3000](http://localhost:3000):
 
 When prompted, keep "admin" as the new password.
 
+If the monitoring dashboard is not connecting to the database, try the following:
+```bash
+docker network create  find-a-doctor_default #create network to connect to three containers
+docker ps #get the names of the three running containers
+```
+For each running container:
+```bash
+docker network connect find-a-doctor_default $(container_name)
+```
+Then, click on the find-a-doctor pipeline and on the left side menu, click on data sources, then PostgresSQL
+and change the host from localhost:5432 to find-a-doctor:5432.  The docker-compose file is also modified to include the network.
+
 ## Background
 
 Here we provide background on some tech not used in the
