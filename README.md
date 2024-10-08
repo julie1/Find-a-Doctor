@@ -400,7 +400,8 @@ The code for the application is in the [`Find-a-Doctor`](Find-a-Doctor/) folder:
 We also have some code in the project root directory:
 
 - [`test.py`](test.py) - select a random question for testing
-- [`cli.py`](cli.py) - interactive CLI for the APP
+- [`cli.py`](cli.py) - interactive CLI for the app
+- [`hip_app.py`](hip_app.py) - Streamlit browser interaction for the app
 
 ### Interface
 
