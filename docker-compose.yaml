@@ -26,6 +26,24 @@ services:
       - postgres
     networks:
       - find-a-doctor_default
+      
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: streamlit
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}     
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    ports:
+      - "${STREAMLIT_PORT:-8501}:8501"
+    depends_on:     
+      - postgres
+    networks:
+      - find-a-doctor_default
        
   grafana:
     image: grafana/grafana:latest
