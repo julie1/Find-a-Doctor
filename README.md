@@ -394,7 +394,7 @@ The code for the application is in the [`Find-a-Doctor`](Find-a-Doctor/) folder:
 - [`ingest.py`](Find-a-Doctor/ingest.py) - loading the data into the knowledge base
 - [`minsearch.py`](Find-a-Doctor/minsearch.py) - an in-memory search engine
 - [`db.py`](Find-a-Doctor/db.py) - the logic for logging the requests and responses to postgres
-- [`db_prep.py`](Find-a-Doctor/db_prep.py)
+- [`db_prep.py`](Find-a-Doctor/db_prep.py) - the script for initializing the database
 
 
 We also have some code in the project root directory:
