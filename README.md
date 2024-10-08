@@ -192,6 +192,11 @@ The easiest way to run the application is with `docker-compose`:
 ```bash
 docker-compose up
 ```
+or to run the application in the background:
+
+```bash
+docker-compose up -d
+```
 
 ### Running locally
 
