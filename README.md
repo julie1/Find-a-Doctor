@@ -71,6 +71,7 @@ You can find the data in [`Find-a-Doctor/data/hip_surgeons.csv`](Find-a-Doctor/d
 - Grafana for monitoring and PostgreSQL as the backend for it
 - OpenAI as an LLM
 - conda
+- Streamlit for browser interactions with the application
 
 ## Preparation
 
