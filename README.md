@@ -307,6 +307,13 @@ You can also make it randomly select a question from
 ```bash
 pipenv run python cli.py --random
 ```
+### Streamlit
+
+To use the application on the browser with Streamlit:
+
+```bash
+pipenv run streamlit run hip_app.py
+```
 
 ### Using `requests`
 
