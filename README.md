@@ -6,7 +6,7 @@ This project was implemented for
 a free course about LLMs and RAG.
 We will specialize in the current project to hip surgeons and in particular
 those who do hip resurfacing. Hip resurfacing (HR), an alternative to total hip replacement (THR), has many 
-advantages, especially for physically acive people with hip dysfunction.  Finding a doctor can be tricky
+advantages, especially for physically active people with hip dysfunction.  Finding a doctor can be tricky
 so having available information in an accessible format could be helpful.  Most of the code for this project as well as the format of this README was adapted from Alexey Grigorev's Fitness Assistant project: https://github.com/alexeygrigorev/fitness-assistant
 
 ## Project overview
