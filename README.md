@@ -1,13 +1,14 @@
 # Find-a-Doctor
 
-This repository is a rag application for finding a doctor.
+This repository is a rag application for finding a doctor. 
 This project was implemented for 
 [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp) -
 a free course about LLMs and RAG.
 We will specialize in the current project to hip surgeons and in particular
 those who do hip resurfacing. Hip resurfacing (HR), an alternative to total hip replacement (THR), has many 
 advantages, especially for physically active people with hip dysfunction.  Finding a doctor can be tricky
-so having available information in an accessible format could be helpful.  Most of the code for this project as well as the format of this README was adapted from Alexey Grigorev's Fitness Assistant project: https://github.com/alexeygrigorev/fitness-assistant
+so having available information in an accessible format could be helpful.  Most of the code for this project as well as the format of this README was adapted from Alexey Grigorev's Fitness Assistant project: https://github.com/alexeygrigorev/fitness-assistant A more recent rag application
+for obtaining information about hip resurfacing can be found at https://github.com/julie1/Hip-Resurfacing-Agent
 
 ## Project overview
 
