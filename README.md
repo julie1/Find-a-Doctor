@@ -1,3 +1,7 @@
+> **Note:** This project was built for a class and is no longer maintained.
+> It was written for `gpt-4o-mini`, which OpenAI has retired. To run it,
+> set `LLM_MODEL` to a current model (e.g. `gpt-5.4-nano`) in your Streamlit secrets.
+
 # Find-a-Doctor
 
 This repository is a rag application for finding a doctor. 
